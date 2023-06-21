@@ -50,3 +50,50 @@
 - Google Cloud AutoML Natural Language: Cria modelos personalizados de processamento de linguagem natural.
 - Google Cloud Document AI: Extrai informações de documentos, como entidades e dados tabulares.
 - Google Cloud Dialogflow: Cria chatbots e assistentes virtuais com processamento de linguagem natural.
+
+## Casos de uso da empresa Airbnb
+
+&emsp;&emsp; O Airbnb é uma plataforma líder no mercado de hospedagem online, que permite que as pessoas aluguem acomodações únicas em todo o mundo. Possui milhões de comentários e avaliações de usuários sendo gerados diariamente e portanto, enfrenta o desafio de analisar e entender o sentimento expresso pelos usuários em relação às suas experiências de hospedagem. <br>
+
+&emsp;&emsp; Para abordar essa questão, o Airbnb utiliza a API de Linguagem Natural do Google Cloud, que oferece recursos avançados de processamento de linguagem natural, incluindo análise de sentimento, extração de entidades e classificação de conteúdo. <br>
+
+&emsp;&emsp; O principal caso de uso do Airbnb para a API de Linguagem Natural é a análise de sentimentos dos comentários dos usuários. Quando um usuário deixa um comentário sobre sua estadia em um local específico, a API é usada para analisar o texto e determinar se o sentimento expresso é positivo, negativo ou neutro. Isso permite ao Airbnb obter uma compreensão rápida do feedback do usuário e identificar áreas de melhoria ou possíveis problemas relatados. <br>
+
+&emsp;&emsp; Além disso, o Airbnb também pode usar a API para extrair entidades mencionadas nos comentários, como nomes de lugares, atrações turísticas ou serviços específicos mencionados pelos usuários. Essas informações podem ser úteis para identificar padrões ou preferências dos usuários em relação a destinos específicos ou amenidades oferecidas nas acomodações. <br>
+
+&emsp;&emsp; A utilização da API de Linguagem Natural do Google Cloud pelo Airbnb permite uma análise mais rápida e eficiente dos comentários dos usuários, fornecendo uma visão valiosa sobre a satisfação dos clientes, destacando áreas de destaque e áreas que precisam ser melhoradas. Isso ajuda o Airbnb a oferecer uma experiência de hospedagem cada vez melhor e a atender às expectativas dos usuários. <br>
+
+## Exemplo de demonstração da API Natural Language
+
+**1) Na primeira imagem abaixo tem-se**: <br>
+- uma frase postiviva;
+- uma análise de sentimento;
+- um resultado com scores;
+
+<img src= "https://github.com/eularibr/Atividade_Programacao_Semana9/blob/main/Atividade_programacao_semana9/demonstracao_frase_positiva.png">
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Foto 1: Frase com sentimento positivo <br>
+
+&emsp;&emsp; Logo, nota-se que obteve um score positivo, uma vez que retornou um score de 0.9, ou seja próximo de 1, e está classificado como positivo. <br>
+
+**2) Já a segunda imagem abaixo tem-se**: <br>
+- uma frase negativa;
+- uma análise de sentimento;
+- um resultado com scores;
+
+<img src= "https://github.com/eularibr/Atividade_Programacao_Semana9/blob/main/Atividade_programacao_semana9/demonstracao_frase_negativa.png">
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Foto 2: Frase com sentimento negativo <br>
+
+&emsp;&emsp; Logo, nota-se que obteve um score negativo, uma vez que retornou um score de -0.7, ou seja bem distante de 1 e perto de -0.25. Sendo assim, essa frase está classificada como negativa. <br>
+
+**3) Já na terceita imagem abaixo tem-se**: <br>
+- uma frase positiva;
+- uma frase negativa;
+- uma análise de sentimento;
+- um resultado com scores;
+
+<img src= "https://github.com/eularibr/Atividade_Programacao_Semana9/blob/main/Atividade_programacao_semana9/demontracao_ambos_sentimentos.png">
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Foto 3: Frase com ambos sentimentos <br>
+
+&emsp;&emsp; Na imagem acima há duas frases, uma sendo negativa e a segunda sendo positiva. Portanto, nota-se que obteve um score negativo para a primeira frase, uma vez que retornou um score de -0.7, ou seja bem distante de 1 e perto de -0.25, ou seja, essa frase está classificada como negativa. E a segunda frase está classificada como positiva com um score de 0.9. Portanto, o score geral foi de 0.1, uma vez que somou os dois scores das frases, e portanto no score geral foi obtida uma classificação neutra. <br>
+
+&emsp;&emsp; Portanto, ao utilizar a Demonstração da API Natural Language, é possível observar como a API pode analisar e extrair informações importantes de textos. Por exemplo, ela pode identificar entidades como nomes de pessoas, locais, datas e muito mais, facilitando a organização e a categorização de informações. Além disso, a API pode realizar análises de sentimentos, determinando se um texto possui um tom positivo, negativo ou neutro.
